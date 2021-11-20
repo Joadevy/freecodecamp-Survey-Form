@@ -17,17 +17,18 @@
 
         <form id="survey-form" action="#">
 
-            <label for="name">Name:</label>
-                <input id="name" type="text" name="customer-name" required>
+            <label for="name" id="name-label">Name:</label>
+                <input id="name" type="text" name="customer-name" placeholder="Enter your name here" required>
 
-            <label for="email">Email:</label>
-                <input id="email" type="email" name="customer-email" required>
+            <label for="email" id="email-label">Email:</label>
+                <input id="email" type="email" name="customer-email" placeholder="Enter your email" required>
             
-            <label for="number">Age (optional): </label>
-                <input id="number" type="number" min="4" max="125" name="customer-age">
-            
+            <label for="number" id="number-label">Age (optional): </label>
+                <input id="number" type="number" min="4" max="125" name="customer-age" placeholder="Age">
+
             <label for="fidelity">How many times do you visit us in a week?</label>
-                <select name="customer-fidelity" id="fidelity">
+                <select name="customer-fidelity" id="dropdown">
+                    <option value="" disabled selected>Select times per week: </option>
                     <option value="first time">It's my first time</option>
                     <option value="less than one">Less than one</option>
                     <option value="one">Once a week</option>
@@ -49,7 +50,8 @@
             </fieldset>
 
             <label for="coffee">Could you choose your favourite of our menu?</label>
-                <select name="coffee-preferency" id="coffee">
+                <select name="coffee-preferency" id="dropdown">
+                    <option value="" disabled selected>Select your favourite coffee type: </option>
                     <option value="Capuccino">Capuccino</option>
                     <option value="Latte">Latte</option>
                     <option value="Americano">Americano</option>
@@ -62,16 +64,20 @@
                 <legend>What do you consider most important when looking a place to drink a coffee? (Check all that apply)</legend>
                     <input type="checkbox" id="speed" value="speed" name="consideration">
                 <label for="speed">Dispensing speed</label>
-                    <input type="checkbox" id="" value="" name="consideration">
-                <label for=""></label>
-                    <input type="checkbox" id="" value="" name="consideration">
-                <label for=""></label>
-                    <input type="checkbox" id="" value="" name="consideration">
-                <label for=""></label>
-                    <input type="checkbox" id="" value="" name="consideration">
-                <label for=""></label>
+                    <input type="checkbox" id="price" value="low price" name="consideration">
+                <label for="price">Cheapest price</label>
+                    <input type="checkbox" id="relax" value="relaxation" name="consideration">
+                <label for="relax">Pleasant environment for relaxation</label>
+                    <input type="checkbox" id="vegan" value="vegan" name="consideration">
+                <label for="vegan">Vegan options in the menu</label>
+                    <input type="checkbox" id="sustainability" value="sustainability" name="consideration">
+                <label for="sustainability">Sustainability coffee store</label>
             </fieldset>
 
+            <label for="suggestion">Any comments or suggestion?</label>
+                <textarea name="extra suggestion" id="suggestion" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+
+            <input type="submit" id="submit">
         </form>
     </main>
 </body>
