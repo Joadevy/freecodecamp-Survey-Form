@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Store Survey</title>
+</head>
+<body>
+    
+    
+    <main class="container">
+        <header>
+            <h1 id="title">The Coffee Store customer survey</h1>
+            <p id="description">Thank you for taking the time to help us improve our service by responding to this form</p>
+        </header>
+
+        <form id="survey-form" action="#">
+
+            <label for="name">Name:</label>
+                <input id="name" type="text" name="customer-name" required>
+
+            <label for="email">Email:</label>
+                <input id="email" type="email" name="customer-email" required>
+            
+            <label for="number">Age (optional): </label>
+                <input id="number" type="number" min="4" max="125" name="customer-age">
+            
+            <label for="fidelity">How many times do you visit us in a week?</label>
+                <select name="customer-fidelity" id="fidelity">
+                    <option value="first time">It's my first time</option>
+                    <option value="less than one">Less than one</option>
+                    <option value="one">Once a week</option>
+                    <option value="two">Two times a week</option>
+                    <option value="tree to five">Three to five times a week</option>
+                    <option value="more than five">More than five, im a huge fan!</option>
+                </select>
+            
+            <fieldset> 
+                <legend>Would you recommend our service to another people?</legend>
+                    <input id="sure" type="radio" value="sure" name="recommendation">
+                <label for="sure">Sure</label>
+                    <input id="maybe" type="radio" value="maybe" name="recommendation">
+                <label for="maybe">Maybe</label>
+                    <input id="no" type="radio" value="no" name="recommendation">
+                <label for="no">Definitely no</label>
+                    <input id="idk" type="radio" value="I don't know" name="recommendation">
+                <label for="idk">I don't know</label>
+            </fieldset>
+
+            <label for="coffee">Could you choose your favourite of our menu?</label>
+                <select name="coffee-preferency" id="coffee">
+                    <option value="Capuccino">Capuccino</option>
+                    <option value="Latte">Latte</option>
+                    <option value="Americano">Americano</option>
+                    <option value="Black">Black</option>
+                    <option value="Irish">Irish</option>
+                    <option value="no-value">I have not yet tasted all of these</option>
+                </select>
+
+            <fieldset>
+                <legend>What do you consider most important when looking a place to drink a coffee? (Check all that apply)</legend>
+                    <input type="checkbox" id="speed" value="speed" name="consideration">
+                <label for="speed">Dispensing speed</label>
+                    <input type="checkbox" id="" value="" name="consideration">
+                <label for=""></label>
+                    <input type="checkbox" id="" value="" name="consideration">
+                <label for=""></label>
+                    <input type="checkbox" id="" value="" name="consideration">
+                <label for=""></label>
+                    <input type="checkbox" id="" value="" name="consideration">
+                <label for=""></label>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>
