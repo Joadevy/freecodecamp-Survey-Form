@@ -2,5 +2,62 @@ form {
     position: relative;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+
+    input,
+    button,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, select {
+        padding: .3rem;
+        color: #827870;
+
+        &:focus {
+            outline: 3px solid;
+            outline-color: #d4c06a;
+            }
+    }
+
+    .customer-data {
+        input {
+            margin-bottom: 1rem;
+        }
+    }
+
+    fieldset{
+        border: none;
+
+        legend {
+            margin-bottom: .5rem;
+        }
+
+        label {
+            display: block;
+        }
+    }
+
+    input[type=submit] {
+        background-color:#fffb44;
+        color: var(--bg-color);
+        width: 50%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #fffb55;
+        }
+    }
 }
 

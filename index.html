@@ -24,67 +24,70 @@
 
         <form id="survey-form" action="#">
 
-            <label for="name" id="name-label">Name:</label>
-                <input id="name" type="text" name="customer-name" placeholder="Enter your name here" required>
+            <div class="customer-data">
+                <label for="name" id="name-label">Name:</label>
+                    <input id="name" type="text" name="customer-name" placeholder="Enter your name here" required>
 
-            <label for="email" id="email-label">Email:</label>
-                <input id="email" type="email" name="customer-email" placeholder="Enter your email" required>
-            
-            <label for="number" id="number-label">Age (optional): </label>
-                <input id="number" type="number" min="4" max="125" name="customer-age" placeholder="Age">
+                <label for="email" id="email-label">Email: </label>
+                    <input id="email" type="email" name="customer-email" placeholder="Enter your email" required>
 
-            <label for="fidelity">How many times do you visit us in a week?</label>
-                <select name="customer-fidelity" id="dropdown">
-                    <option value="" disabled selected>Select times per week: </option>
-                    <option value="first time">It's my first time</option>
-                    <option value="less than one">Less than one</option>
-                    <option value="one">Once a week</option>
-                    <option value="two">Two times a week</option>
-                    <option value="tree to five">Three to five times a week</option>
-                    <option value="more than five">More than five, im a huge fan!</option>
-                </select>
-            
+                <label for="number" id="number-label">Age (optional):</label>
+                    <input id="number" type="number" min="4" max="125" name="customer-age" placeholder="Age">
+            </div>
+
+            <div class="frequency-data">
+                <label for="dropdown">How many times do you visit us in a week?</label>
+                    <select name="customer-fidelity" id="dropdown">
+                        <option value="" disabled selected>Select times per week: </option>
+                        <option value="first time">It's my first time</option>
+                        <option value="less than one">Less than one</option>
+                        <option value="one">Once a week</option>
+                        <option value="two">Two times a week</option>
+                        <option value="tree to five">Three to five times a week</option>
+                        <option value="more than five">More than five, im a huge fan!</option>
+                    </select>
+            </div>
+        
+            <div class="recommendation-data">
             <fieldset> 
-                <legend>Would you recommend our service to another people?</legend>
-                    <input id="sure" type="radio" value="sure" name="recommendation">
-                <label for="sure">Sure</label>
-                    <input id="maybe" type="radio" value="maybe" name="recommendation">
-                <label for="maybe">Maybe</label>
-                    <input id="no" type="radio" value="no" name="recommendation">
-                <label for="no">Definitely no</label>
-                    <input id="idk" type="radio" value="I don't know" name="recommendation">
-                <label for="idk">I don't know</label>
-            </fieldset>
+                    <legend>Would you recommend our service to another people?</legend>
+                    <label for="sure"><input id="sure" type="radio" value="sure" name="recommendation"> Sure</label>
+                    <label for="maybe"><input id="maybe" type="radio" value="maybe" name="recommendation"> Maybe</label>
+                    <label for="no"><input id="no" type="radio" value="no" name="recommendation"> Definitely no</label>
+                    <label for="idk"><input id="idk" type="radio" value="I don't know" name="recommendation"> I don't know</label>
+                </fieldset>
+            </div>
 
-            <label for="coffee">Could you choose your favourite of our menu?</label>
-                <select name="coffee-preferency" id="dropdown">
-                    <option value="" disabled selected>Select your favourite coffee type: </option>
-                    <option value="Capuccino">Capuccino</option>
-                    <option value="Latte">Latte</option>
-                    <option value="Americano">Americano</option>
-                    <option value="Black">Black</option>
-                    <option value="Irish">Irish</option>
-                    <option value="no-value">I have not yet tasted all of these</option>
-                </select>
-
+            <div class="product-data">
+                <label for="dropdown-coffee">Could you choose your favourite of our menu?</label>
+                    <select name="coffee-preferency" id="dropdown-coffee">
+                        <option value="" disabled selected>Select your favourite coffee type: </option>
+                        <option value="Capuccino">Capuccino</option>
+                        <option value="Latte">Latte</option>
+                        <option value="Americano">Americano</option>
+                        <option value="Black">Black</option>
+                        <option value="Irish">Irish</option>
+                        <option value="no-value">I have not yet tasted all of these</option>
+                    </select>
+            </div>
+        
+            <div class="environment-data">
             <fieldset>
-                <legend>What do you consider most important when looking a place to drink a coffee? (Check all that apply)</legend>
-                    <input type="checkbox" id="speed" value="speed" name="consideration">
-                <label for="speed">Dispensing speed</label>
-                    <input type="checkbox" id="price" value="low price" name="consideration">
-                <label for="price">Cheapest price</label>
-                    <input type="checkbox" id="relax" value="relaxation" name="consideration">
-                <label for="relax">Pleasant environment for relaxation</label>
-                    <input type="checkbox" id="vegan" value="vegan" name="consideration">
-                <label for="vegan">Vegan options in the menu</label>
-                    <input type="checkbox" id="sustainability" value="sustainability" name="consideration">
-                <label for="sustainability">Sustainability coffee store</label>
-            </fieldset>
+                    <legend>What do you consider most important when looking a place to drink a coffee? (Check all that apply)</legend>
+                        <label for="speed"><input type="checkbox" id="speed" value="speed" name="consideration"> Dispensing speed </label>
+                        <label for="price"><input type="checkbox" id="price" value="low price" name="consideration"> Cheapest price</label>
+                        <label for="relax"><input type="checkbox" id="relax" value="relaxation" name="consideration"> Pleasant environment for relaxation</label>
+                        <label for="vegan"><input type="checkbox" id="vegan" value="vegan" name="consideration"> Vegan options in the menu</label>
+                        <label for="sustainability"><input type="checkbox" id="sustainability" value="sustainability" name="consideration"> Sustainability coffee store</label>  
+                </fieldset>
+            </div>
 
-            <label for="suggestion">Any comments or suggestion?</label>
-                <textarea name="extra suggestion" id="suggestion" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+            <div class="suggestion-data">
+                <label for="suggestion">Any comments or suggestion?</label>
+                    <textarea name="extra suggestion" id="suggestion" cols="1" rows="5" placeholder="Enter your comment here..."></textarea>
+            </div>
 
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" value="Submit">
         </form>
     </main>
 </body>
