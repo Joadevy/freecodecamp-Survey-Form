@@ -51,4 +51,13 @@ h1 {
   font-size: 3rem;
 }
 
+p {
+  font-family: var(--tp-content);
+  font-style: italic;
+}
+
+form {
+  font-family: var(--tp-content);
+}
+
 /*# sourceMappingURL=styles.css.map */
