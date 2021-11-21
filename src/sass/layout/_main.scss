@@ -1,9 +1,11 @@
 main {
-    position: relative;
     background-color: var(--bg-color);
     opacity: .85;
     color: var(--txt-color);
-    display: flex;
-    flex-direction: column;
     width: 50%;
+    padding: 0 3rem 3rem 3rem;
+    margin: 2rem 0;
+    border-radius: 4%;
 }
+
+

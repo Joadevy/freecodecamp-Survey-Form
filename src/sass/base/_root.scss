@@ -10,12 +10,13 @@ html {
 
 body {
     position: relative;
-
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
     &::after {
     content: "";
     background-image: url(/src/assets/pattern/background-pattern.jpg);
-    width: 100vw;
-    height: 100vh;
     opacity: 0.75;
     top: 0;
     right: 0;
