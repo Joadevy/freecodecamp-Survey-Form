@@ -8,4 +8,16 @@ main {
     border-radius: 25px;
 }
 
+@media screen and (max-width:650px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width: 95%;
+    }
+}
+
 

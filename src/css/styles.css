@@ -24,6 +24,16 @@ main {
   border-radius: 25px;
 }
 
+@media screen and (max-width: 650px) {
+  main {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    width: 95%;
+  }
+}
 :root {
   --bg-color: #3a261b;
   --txt-color: #f9f9f9;
