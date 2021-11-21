@@ -1,7 +1,8 @@
 main {
     position: relative;
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    opacity: .85;
+    color: var(--txt-color);
     display: flex;
     flex-direction: column;
     width: 50%;

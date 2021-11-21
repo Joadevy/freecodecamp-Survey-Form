@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap");
 main {
   position: relative;
-  background-color: black;
-  color: white;
+  background-color: var(--bg-color);
+  opacity: 0.85;
+  color: var(--txt-color);
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+:root {
+  --bg-color: #3a261b;
+  --txt-color: #f9f9f9;
+}
+
+html {
+  font-size: 100%;
 }
 
 * {
@@ -28,6 +39,16 @@ body::after {
   bottom: 0;
   position: absolute;
   z-index: -1;
+}
+
+:root {
+  --tp-content: "poppins", "Arial";
+  --tp-tittle: "Caveat", "sans-serif";
+}
+
+h1 {
+  font-family: var(--tp-tittle);
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
