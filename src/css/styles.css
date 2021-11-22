@@ -66,7 +66,7 @@ body {
 }
 body::after {
   content: "";
-  background-image: url("../assets/pattern/background-pattern.jpg");
+  background-image: url('../assets/pattern/background-pattern.jpg');
   opacity: 0.75;
   top: 0;
   right: 0;
