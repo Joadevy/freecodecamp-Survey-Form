@@ -37,6 +37,10 @@ main {
 :root {
   --bg-color: #3a261b;
   --txt-color: #f9f9f9;
+  --input-color: #827870;
+  --outline-color: #d4c06a;
+  --button-color: #fffb44;
+  --button-hover: #fffb77;
 }
 
 html {
@@ -62,7 +66,7 @@ body {
 }
 body::after {
   content: "";
-  background-image: url(/src/assets/pattern/background-pattern.jpg);
+  background-image: url("../assets/pattern/background-pattern.jpg");
   opacity: 0.75;
   top: 0;
   right: 0;
@@ -113,11 +117,11 @@ form div {
 }
 form input, form select {
   padding: 0.3rem;
-  color: #827870;
+  color: var(--input-color);
 }
 form input:focus, form select:focus {
   outline: 3px solid;
-  outline-color: #d4c06a;
+  outline-color: var(--outline-color);
 }
 form .customer-data input {
   margin-bottom: 1rem;
@@ -131,8 +135,12 @@ form fieldset legend {
 form fieldset label {
   display: block;
 }
+form fieldset input {
+  width: 1.1rem;
+  height: 1.1rem;
+}
 form input[type=submit] {
-  background-color: #fffb44;
+  background-color: var(--button-color);
   color: var(--bg-color);
   width: 50%;
   display: flex;
@@ -141,7 +149,7 @@ form input[type=submit] {
 }
 form input[type=submit]:hover {
   cursor: pointer;
-  background-color: #fffb55;
+  background-color: var(--button-hover);
 }
 
 /*# sourceMappingURL=styles.css.map */

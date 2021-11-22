@@ -20,11 +20,11 @@ form {
 
     input, select {
         padding: .3rem;
-        color: #827870;
+        color: var(--input-color);
 
         &:focus {
             outline: 3px solid;
-            outline-color: #d4c06a;
+            outline-color: var(--outline-color);
             }
     }
 
@@ -44,10 +44,15 @@ form {
         label {
             display: block;
         }
+
+        input {
+            width: 1.1rem;
+            height: 1.1rem;
+        }
     }
 
     input[type=submit] {
-        background-color:#fffb44;
+        background-color:var(--button-color);
         color: var(--bg-color);
         width: 50%;
         display: flex;
@@ -56,7 +61,7 @@ form {
 
         &:hover {
             cursor: pointer;
-            background-color: #fffb55;
+            background-color: var(--button-hover);
         }
     }
 }
